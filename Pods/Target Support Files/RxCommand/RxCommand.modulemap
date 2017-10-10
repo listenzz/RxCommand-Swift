@@ -1,0 +1,6 @@
+framework module RxCommand {
+  umbrella header "RxCommand-umbrella.h"
+
+  export *
+  module * { export * }
+}

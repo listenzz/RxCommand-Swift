@@ -1,0 +1,34 @@
+{
+  "name": "RxCommand",
+  "version": "0.0.1",
+  "summary": "Abstracts command to be performed in RxSwift.",
+  "description": "A command is an observable triggered in response to some action, typically UI-related.",
+  "homepage": "https://github.com/listenzz/RxCommand-Swift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Listen": "https://listenzz.github.io/"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "osx": "10.10",
+    "watchos": "2.0",
+    "tvos": "9.0"
+  },
+  "source": {
+    "git": "git@github.com:listenzz/RxCommand-Swift.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "RxCommand/RxCommand/**/*.{swift}",
+  "frameworks": "Foundation",
+  "dependencies": {
+    "RxSwift": [
+      "~> 3.0"
+    ],
+    "RxCocoa": [
+      "~> 3.0"
+    ]
+  }
+}

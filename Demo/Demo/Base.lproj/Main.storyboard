@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ioW-J8-aOb">
+                                <rect key="frame" x="50" y="100" width="275" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Gld-Ha-1q0"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NY0-gA-joE">
+                                <rect key="frame" x="50" y="164" width="175" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvN-jh-pJA">
+                                <rect key="frame" x="50" y="238" width="275" height="40"/>
+                                <state key="normal" title="登录"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqU-UJ-N9F" customClass="CaptchaButton" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="225" y="164" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="82q-W1-Oh8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="获取验证码">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ioW-J8-aOb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="0CB-Id-xMW"/>
+                            <constraint firstItem="NY0-gA-joE" firstAttribute="top" secondItem="ioW-J8-aOb" secondAttribute="bottom" constant="24" id="3mS-Uw-Nm7"/>
+                            <constraint firstItem="dvN-jh-pJA" firstAttribute="leading" secondItem="ioW-J8-aOb" secondAttribute="leading" id="5Oe-Jf-qZc"/>
+                            <constraint firstItem="NY0-gA-joE" firstAttribute="height" secondItem="ioW-J8-aOb" secondAttribute="height" id="6dN-S5-rjd"/>
+                            <constraint firstItem="IqU-UJ-N9F" firstAttribute="trailing" secondItem="ioW-J8-aOb" secondAttribute="trailing" id="B8n-Ls-BT4"/>
+                            <constraint firstItem="dvN-jh-pJA" firstAttribute="top" secondItem="NY0-gA-joE" secondAttribute="bottom" constant="34" id="NNX-TX-AeJ"/>
+                            <constraint firstItem="IqU-UJ-N9F" firstAttribute="top" secondItem="NY0-gA-joE" secondAttribute="top" id="REB-ly-SDX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ioW-J8-aOb" secondAttribute="trailing" constant="50" id="WMx-nf-NPH"/>
+                            <constraint firstItem="dvN-jh-pJA" firstAttribute="trailing" secondItem="ioW-J8-aOb" secondAttribute="trailing" id="XPP-Q1-Lwi"/>
+                            <constraint firstItem="ioW-J8-aOb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Zxk-mu-23P"/>
+                            <constraint firstItem="dvN-jh-pJA" firstAttribute="height" secondItem="ioW-J8-aOb" secondAttribute="height" id="c0j-0w-0NU"/>
+                            <constraint firstItem="NY0-gA-joE" firstAttribute="leading" secondItem="ioW-J8-aOb" secondAttribute="leading" id="ct2-Df-oYq"/>
+                            <constraint firstItem="IqU-UJ-N9F" firstAttribute="leading" secondItem="NY0-gA-joE" secondAttribute="trailing" id="jJR-4n-YV8"/>
+                            <constraint firstItem="IqU-UJ-N9F" firstAttribute="height" secondItem="ioW-J8-aOb" secondAttribute="height" id="jbA-E3-jBe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="captchaButton" destination="IqU-UJ-N9F" id="uyh-7y-qgb"/>
+                        <outlet property="captchaTextField" destination="NY0-gA-joE" id="CrI-jQ-pDk"/>
+                        <outlet property="loginButton" destination="dvN-jh-pJA" id="TBB-az-088"/>
+                        <outlet property="phoneNumberTextField" destination="ioW-J8-aOb" id="AfG-j0-EG1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,29 @@
+PODS:
+  - IQKeyboardManagerSwift (4.0.10)
+  - PKHUD (4.2.3)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxCommand (0.0.1):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxSwift (3.6.1)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift (= 4.0.10)
+  - PKHUD (= 4.2.3)
+  - RxCommand (from `./`)
+
+EXTERNAL SOURCES:
+  RxCommand:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
+  PKHUD: c7692163a09875cbf15827dc581df3c5cf7f1015
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxCommand: 4cd146c6e630607ed7c8474b387be6f42b6f595a
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+
+PODFILE CHECKSUM: 695f7831eb9eb15b27924c2f03035f6d5d8ae04c
+
+COCOAPODS: 1.2.1
