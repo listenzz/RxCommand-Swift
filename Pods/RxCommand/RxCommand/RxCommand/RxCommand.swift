@@ -1,9 +1,9 @@
 //
 //  RxCommand.swift
-//  RxCommand
+//  Driver
 //
-//  Created by Listen on 2017/10/11.
-//  Copyright © 2017年 非非白. All rights reserved.
+//  Created by Listen on 2017/10/7.
+//  Copyright © 2017年 顺道嘉. All rights reserved.
 //
 
 import Foundation

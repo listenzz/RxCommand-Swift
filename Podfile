@@ -13,6 +13,8 @@ target 'Demo' do
     # RxCommand
     pod 'RxCommand', :path => './'
     
+    # pod 'RxCommand', :git => "git@github.com:listenzz/RxCommand-Swift.git"
+    
     # HUD https://github.com/pkluz/PKHUD
     pod 'PKHUD', '4.2.3'
     
